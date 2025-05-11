@@ -2,36 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
 typedef struct Song {
-    char* title;
-    char* artist;
+    char *title;
+    char *artist;
     int year;
-    char* lyrics;
+    char *lyrics;
     int streams;
 } Song;
 
 typedef struct Playlist {
-    char* name;
-    Song** songs;
+    char *name;
+    Song **songs;
     int songsNum;
 } Playlist;
 
-//some recommendations for functions, you may implement however you want
+// Below are some recommendations for functions, you may implement however you want
 
 void deleteSong() {
 
     printf("Song deleted successfully.\n");
 }
 
-
-
 void playSong() {
     
 }
-
-
 
 void freeSong() {
 
@@ -46,14 +40,10 @@ void printPlaylistsMenu() {
     printf("\t1. Watch playlists\n\t2. Add playlist\n\t3. Remove playlist\n\t4. exit\n");   
 }
 
-
-
 void sortPlaylist() {
     
     printf("sorted\n");
 }
-
-
 
 int main() {
     printf("Goodbye!\n");  
